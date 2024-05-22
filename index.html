@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shule Bora - Student Registration</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Shule Bora Academy - Student Registration</h1>
+  <form class="registration-form" action="submit.php" method="post">
+    <fieldset>
+      <legend>Personal Information</legend>
+      <div class="form-group">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+      </div>
+      <div class="form-group">
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+          <option value="">Select Gender</option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+          
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" rows="4" cols="50" required></textarea>
+      </div>
+      <div class="form-group">
+        <label for="phone">Mobile Phone Number:</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="07XXXXXXXXXX" title="Please enter a 10-digit mobile phone number without special characters or letters" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend>Course Selection</legend>
+      <div class="form-group">
+        <label for="course">Course:</label>
+        <select id="course" name="course" required>
+          <option value="">Select Course</option>
+          <option value="Astrophysics">Astrophysics</option>
+          <option value="Robotics Engineering">Robotics Engineering</option>
+          <option value="Data Science">Data Science</option>
+          <option value="Digital Media">Digital Media</option>
+        </select>
+      </div>
+    </fieldset>
+    <div class="button-group">
+      <button type="submit">Register</button>
+      <button type="reset">Cancel</button>
+    </div>
+  </form>
+</body>
+</html>
+
